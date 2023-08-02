@@ -41,7 +41,7 @@ def bfs(torres_iniciais):
     fila = deque([EstadoHanoi(torres_iniciais)])
     visitados = set([str(torres_iniciais)])
     
-#Verifica se o estado ainda não foi visitado, se nao tiver sido, coloca na fila pra ser vistitado posteriormente
+# Verifica se o estado ainda não foi visitado, se nao tiver sido, coloca na fila pra ser vistitado posteriormente
     while fila:
         estado_atual = fila.popleft()
         if estado_atual.eh_estado_objetivo():
