@@ -24,9 +24,9 @@ class EstadoHanoi:
 
 def obter_movimentos_possiveis(estado_atual):
     movimentos_possiveis = []
-    for origem in range(3):
+    for origem in range(5):
         if estado_atual.torres[origem]:
-            for destino in range(3):
+            for destino in range(5):
                 if origem != destino and (not estado_atual.torres[destino] or estado_atual.torres[origem][-1] < estado_atual.torres[destino][-1]):
                     movimentos_possiveis.append((origem, destino))
     return movimentos_possiveis
