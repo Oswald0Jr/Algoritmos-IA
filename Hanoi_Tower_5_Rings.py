@@ -22,7 +22,7 @@ class EstadoHanoi:
         novo_estado.movimentos.append((origem, destino))
         return novo_estado
         
-# Verifica o estado atual é o objetivo 
+# Verifica se o estado atual é o objetivo 
     def eh_estado_objetivo(self):
         return len(self.torres[0]) == 0 and len(self.torres[1]) == 0
         
